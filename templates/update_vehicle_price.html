@@ -3,7 +3,7 @@
 <h1 class="text-center my-5">🚗Vehicle Details🚗</h1>
 <div class="container">
     <a class="btn mb-3 btn-outline-info" href="{{ url_for('home') }}">Go to Home</a>
-    <form action="/add-vehicle" method="POST">
+    <form action="{{ url_for('update_vehicle_price', id=vehicle.id) }}" method="POST">
         <div class="mb-3">
             <label class="form-label" for="vehicle">Vehicle</label>: {{vehicle.name}}
         </div>

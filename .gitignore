@@ -176,3 +176,5 @@ build/
 *.egg-info/
 
 flaskr/
+
+.vscode/
